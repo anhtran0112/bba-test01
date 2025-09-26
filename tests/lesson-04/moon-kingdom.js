@@ -50,6 +50,7 @@ function printLeaderboard(players) {
         Dương (1) → Phần tử đầu tiên nên đứng SAU phần tử thứ hai
         Zero (0) → Giữ nguyên thứ tự (bằng nhau) */
     players.sort(function (firstPlayer, secondPlayer) {
+
         if (firstPlayer.score > secondPlayer.score) {
             return -1;
         } else if (firstPlayer.score < secondPlayer.score) {
@@ -61,8 +62,8 @@ function printLeaderboard(players) {
     console.log("===========================================================================");
     console.log("Bài 2: Bảng xếp hạng");
     for (let i = 0; i < players.length; i++) {
-        const currentRank = index + 1;
-        const currentPlayer = players[index];
+        const currentRank = i + 1;
+        const currentPlayer = players[i];
         let medalType = "";
         if (currentRank === 1) {
             medalType = "Gold ";
@@ -72,6 +73,7 @@ function printLeaderboard(players) {
             medalType = "Bronze ";
         }
         console.log(medalType + currentRank + " : " + currentPlayer.name + " - " + currentPlayer.score + " điểm");
+
     }
 }
 
