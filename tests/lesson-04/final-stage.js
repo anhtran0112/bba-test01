@@ -10,4 +10,4 @@ function findPairDivisibleBy17() {
     }
     return count;
 }
-console.log("Số lượng cặp số chia hết cho 17 là: " + findPairDivisibleBy17());
+console.log("Tổng cộng:" , findPairDivisibleBy17() , "cặp");
