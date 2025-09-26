@@ -66,14 +66,13 @@ function printLeaderboard(players) {
         const currentPlayer = players[i];
         let medalType = "";
         if (currentRank === 1) {
-            medalType = "Gold ";
+            medalType = "🥇 ";
         } else if (currentRank === 2) {
-            medalType = "Silver ";
+            medalType = "🥈 ";
         } else if (currentRank === 3) {
-            medalType = "Bronze ";
+            medalType = "🥉 ";
         }
-        console.log(medalType + currentRank + " : " + currentPlayer.name + " - " + currentPlayer.score + " điểm");
-
+        console.log(medalType + currentRank + " . " + currentPlayer.name + " - " + currentPlayer.score + " điểm");
     }
 }
 
